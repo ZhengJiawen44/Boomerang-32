@@ -9,5 +9,3 @@ Create a handheld electronic device that has bsaic functionalities such as chang
 <img align="left" src="front.png">
 
 
-## milestone 1:
-create an interactive menu, and implement screen brightness change functionality along with battery display
