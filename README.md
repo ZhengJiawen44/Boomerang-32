@@ -3,13 +3,13 @@ Boomerang-32 is a electronics project centered around an ESP32 microcontroller. 
 
 ## Objectives
 Create a handheld electronic device that has basic functionalities such as 
-🔆changing screen brightness
-🔋 displaying battery level
-🎮 games
-🤖 virtual Pets
-🖥️ Network Monitor
-...and more!
-
+- 🔆changing screen brightness
+- 🔋 displaying battery level
+- 🎮 games
+- 🤖 virtual Pets
+- 🖥️ Network Monitor
+- ...and more!
+  
 I will code everything from scratch using C++ so I can implement all the cool things that I wish to see!
 
 ## Project Hardware:
