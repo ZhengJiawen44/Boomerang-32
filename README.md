@@ -25,6 +25,6 @@ create an interactive menu, and implement screen brightness change functionality
 - ✔️ a basic menu that can be navigated by a button. (currently only one touch sensor, I have yet to acquire enough buttons).
 
 ## milestone 2:
-✔️ add atleast 4 buttons to the board.
-✔️ use buttons to navigate the menu.
+- ✔️ add atleast 4 buttons to the board.
+- ✔️ use buttons to navigate the menu.
 - create a battery status indicator.
