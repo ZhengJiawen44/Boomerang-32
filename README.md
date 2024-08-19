@@ -27,4 +27,5 @@ create an interactive menu, and implement screen brightness change functionality
 ## milestone 2:
 - ✔️ add atleast 4 buttons to the board.
 - ✔️ use buttons to navigate the menu.
+- interface to test button functionality.
 - create a battery status indicator.
