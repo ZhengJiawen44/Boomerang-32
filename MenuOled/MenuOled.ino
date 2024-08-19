@@ -6,7 +6,8 @@
 Preferences pref;
 TFT_eSPI tft = TFT_eSPI();  // Invoke library, pins defined in User_Setup.h
 
-#define SENSOR_PIN  33
+const int PushButtonUp =12;
+const int PushButtonDown =26;
 int brightness;
 
 // Array of all bitmaps for convenience.
@@ -26,7 +27,6 @@ int previousItem = 0;
 int currentItem = 1;
 int nextItem = 2;
 
-bool buttonPressed = false;  // Button state flag
 
 // Create Sprites
 TFT_eSprite sprPrev = TFT_eSprite(&tft);
@@ -44,8 +44,9 @@ void setup(void) {
   analogWrite(5, brightness);
   
   Serial.begin(115200);
+  pinMode(PushButtonUp, INPUT);
+  pinMode(PushButtonDown, INPUT);
   tft.init();
-  pinMode(SENSOR_PIN, INPUT);
   tft.fillScreen(TFT_BLACK);
 
   // Setup sprite dimensions
@@ -83,10 +84,25 @@ void drawItems() {
 }
 
 void loop() {
-  int state = digitalRead(SENSOR_PIN);
+  int Push_button_state_up = digitalRead(PushButtonUp);
+  int Push_button_state_down = digitalRead(PushButtonDown);
 
-  if (state == HIGH && !buttonPressed) {  // Button pressed
-    buttonPressed = true;
+  if (Push_button_state_up == HIGH) {  // Button pressed
+    
+    // Scroll to the next items
+    previousItem -= 1;
+    currentItem -= 1;
+    nextItem -= 1;
+
+    // Wrap around the array index
+    previousItem = (previousItem + 9) % 9;
+    currentItem = (currentItem + 9) % 9;
+    nextItem = (nextItem + 9) % 9;
+
+    // Draw the updated items
+    drawItems();
+  }
+    if (Push_button_state_down == HIGH) {  // Button pressed
     
     // Scroll to the next items
     previousItem += 1;
@@ -94,17 +110,12 @@ void loop() {
     nextItem += 1;
 
     // Wrap around the array index
-    previousItem %= 9;
-    currentItem %= 9;
-    nextItem %= 9;
+    previousItem = (previousItem + 9) % 9;
+    currentItem = (currentItem + 9) % 9;
+    nextItem = (nextItem + 9) % 9;
 
     // Draw the updated items
     drawItems();
-
-// Debounce delay to avoid rapid scrolling
   }
   
-  if (state == LOW) {  // Button released
-    buttonPressed = false;
-  }
 }
