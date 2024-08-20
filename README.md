@@ -20,7 +20,6 @@ I will code everything from scratch using C++ so I can implement all the cool th
 
 
 ## milestone 1:
-create an interactive menu, and implement screen brightness change functionality along with battery display.
 - ✔️ screen brightness settings persists between on/off and can be changed.
 - ✔️ a basic menu that can be navigated by a button. (currently only one touch sensor, I have yet to acquire enough buttons).
 
