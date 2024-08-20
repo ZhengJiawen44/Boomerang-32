@@ -37,7 +37,7 @@ create an interactive menu, and implement screen brightness change functionality
 - a menu to test button responsiveness
 
 ## I will start a daily log section, if you are interested in my development process
-### day 3 2-/8/2024
+### day 3 (20/8/2024)
 - I replaced the touch sensor with a accelerometer+gyroscope. I hope to use this sensor to awake the boomerang from deep sleep when the device is held up. (much like mordern smartphones)
 - if the jumper wires arrive today I will complete everything in milestone #2.
 
