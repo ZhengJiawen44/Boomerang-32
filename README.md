@@ -27,5 +27,18 @@ create an interactive menu, and implement screen brightness change functionality
 ## milestone 2:
 - ✔️ add atleast 4 buttons to the board.
 - ✔️ use buttons to navigate the menu.
-- interface to test button functionality.
+- install a Light dependent resistor to adjust screen brightness according to light source.
+- replace the touch sensor with a accelerator+gyroscope module.
+- wire up all components and wrap up all hardware installation.
+
+## milestone 3:
 - create a battery status indicator.
+- a menu to display ambient temperature
+- a menu to test button responsiveness
+
+## I will start a daily log section, if you are interested in my development process
+### day 3 2-/8/2024
+- I replaced the touch sensor with a accelerometer+gyroscope. I hope to use this sensor to awake the boomerang from deep sleep when the device is held up. (much like mordern smartphones)
+- if the jumper wires arrive today I will complete everything in milestone #2.
+
+
