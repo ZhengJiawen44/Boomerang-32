@@ -39,5 +39,8 @@ I will code everything from scratch using C++ so I can implement all the cool th
 ### day 3 (20/8/2024)
 - I replaced the touch sensor with a accelerometer+gyroscope. I hope to use this sensor to awake the boomerang from deep sleep when the device is held up. (much like mordern smartphones)
 - if the jumper wires arrive today I will complete everything in milestone #2.
+- I need to implement a shorter and simpler button debounce logic wihtout compromising quality. button debounce is when a button is pressed once but makes contact with the circuit more than once, kind of like when you bounce a ball and it doesnt just hit the ground once, but multiple times before coming to a rest. This is problematic as the esp32 will interpret these bounces as additional clicks. we can use code to fix this issue, I just don't want to write long and complex logic that makes it harder to debug.
+
+# Thats all folks
 
 
