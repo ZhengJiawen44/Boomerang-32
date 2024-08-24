@@ -42,9 +42,9 @@ I will code everything from scratch using C++ so I can implement all the cool th
 ## milestone 2:
 - ✔️ add atleast 4 buttons to the board.
 - ✔️ use buttons to navigate the menu.
-- install a Light dependent resistor to adjust screen brightness according to light source.
-- replace the touch sensor with a accelerator+gyroscope module.
-- wire up all components and wrap up all hardware installation.
+- ✔️ install a Light dependent resistor to adjust screen brightness according to light source.
+- ✔️ replace the touch sensor with a accelerator+gyroscope module.
+- ✔️ wire up all components and wrap up all hardware installation.
 
 ## milestone 3:
 - create a battery status indicator.
