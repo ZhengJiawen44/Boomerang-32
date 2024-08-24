@@ -7,8 +7,18 @@ Boomerang-32 is a electronics project centered around an ESP32 microcontroller. 
 - Mpu 6050
 - buttons
 - new button testing interface
+- charging module
+- esp32
+- Lipo battery
+- on/off switch
 <img  src="front&Back2.png">
-# Version 0.1: 
+
+## Version 0.1: 
+- touch sensor
+- charging module
+- esp32
+- Lipo battery
+- on/off switch
 <img  src="front&Back.png">
 
 ## Objectives
