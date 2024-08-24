@@ -1,6 +1,7 @@
 # Boomerang-32
 Boomerang-32 is a electronics project centered around an ESP32 microcontroller. I will be adding different cool and interesting features as I go along!
 <img  src="front&Back.png">
+<img  src="front&back2.png">
 
 ## Objectives
 Create a handheld electronic device that has basic functionalities such as 
